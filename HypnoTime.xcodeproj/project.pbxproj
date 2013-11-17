@@ -19,6 +19,14 @@
 		D83A32DC1834DF3C000FCB4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83A32C41834DF3B000FCB4E /* UIKit.framework */; };
 		D83A32E41834DF3C000FCB4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D83A32E21834DF3C000FCB4E /* InfoPlist.strings */; };
 		D83A32E61834DF3C000FCB4E /* HypnoTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A32E51834DF3C000FCB4E /* HypnoTimeTests.m */; };
+		D83A32F11834DF8A000FCB4E /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A32F01834DF8A000FCB4E /* HypnosisViewController.m */; };
+		D83A32F71834E038000FCB4E /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A32F61834E038000FCB4E /* HypnosisView.m */; };
+		D83A32FA1834E2B4000FCB4E /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A32F91834E2B4000FCB4E /* TimeViewController.m */; };
+		D83A33021834FE45000FCB4E /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83A33011834FE45000FCB4E /* TimeViewController.xib */; };
+		D83A330718350165000FCB4E /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330318350165000FCB4E /* Hypno.png */; };
+		D83A330818350165000FCB4E /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330418350165000FCB4E /* Hypno@2x.png */; };
+		D83A330918350165000FCB4E /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330518350165000FCB4E /* Time.png */; };
+		D83A330A18350165000FCB4E /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330618350165000FCB4E /* Time@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,17 @@
 		D83A32E11834DF3C000FCB4E /* HypnoTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoTimeTests-Info.plist"; sourceTree = "<group>"; };
 		D83A32E31834DF3C000FCB4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D83A32E51834DF3C000FCB4E /* HypnoTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoTimeTests.m; sourceTree = "<group>"; };
+		D83A32EF1834DF8A000FCB4E /* HypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisViewController.h; path = ../HypnosisViewController.h; sourceTree = "<group>"; };
+		D83A32F01834DF8A000FCB4E /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisViewController.m; path = ../HypnosisViewController.m; sourceTree = "<group>"; };
+		D83A32F51834E038000FCB4E /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		D83A32F61834E038000FCB4E /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		D83A32F81834E2B4000FCB4E /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		D83A32F91834E2B4000FCB4E /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		D83A33011834FE45000FCB4E /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
+		D83A330318350165000FCB4E /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		D83A330418350165000FCB4E /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		D83A330518350165000FCB4E /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		D83A330618350165000FCB4E /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +96,10 @@
 		D83A32B41834DF3B000FCB4E = {
 			isa = PBXGroup;
 			children = (
+				D83A330318350165000FCB4E /* Hypno.png */,
+				D83A330418350165000FCB4E /* Hypno@2x.png */,
+				D83A330518350165000FCB4E /* Time.png */,
+				D83A330618350165000FCB4E /* Time@2x.png */,
 				D83A32C61834DF3B000FCB4E /* HypnoTime */,
 				D83A32DF1834DF3C000FCB4E /* HypnoTimeTests */,
 				D83A32BF1834DF3B000FCB4E /* Frameworks */,
@@ -109,6 +132,13 @@
 			children = (
 				D83A32CF1834DF3C000FCB4E /* HypnosisterAppDelegate.h */,
 				D83A32D01834DF3C000FCB4E /* HypnosisterAppDelegate.m */,
+				D83A32F81834E2B4000FCB4E /* TimeViewController.h */,
+				D83A32F91834E2B4000FCB4E /* TimeViewController.m */,
+				D83A32EF1834DF8A000FCB4E /* HypnosisViewController.h */,
+				D83A32F01834DF8A000FCB4E /* HypnosisViewController.m */,
+				D83A32F51834E038000FCB4E /* HypnosisView.h */,
+				D83A32F61834E038000FCB4E /* HypnosisView.m */,
+				D83A33011834FE45000FCB4E /* TimeViewController.xib */,
 				D83A32D21834DF3C000FCB4E /* Images.xcassets */,
 				D83A32C71834DF3B000FCB4E /* Supporting Files */,
 			);
@@ -220,7 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83A330A18350165000FCB4E /* Time@2x.png in Resources */,
+				D83A330918350165000FCB4E /* Time.png in Resources */,
 				D83A32CB1834DF3B000FCB4E /* InfoPlist.strings in Resources */,
+				D83A33021834FE45000FCB4E /* TimeViewController.xib in Resources */,
+				D83A330718350165000FCB4E /* Hypno.png in Resources */,
+				D83A330818350165000FCB4E /* Hypno@2x.png in Resources */,
 				D83A32D31834DF3C000FCB4E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83A32F11834DF8A000FCB4E /* HypnosisViewController.m in Sources */,
+				D83A32F71834E038000FCB4E /* HypnosisView.m in Sources */,
 				D83A32CD1834DF3C000FCB4E /* main.m in Sources */,
 				D83A32D11834DF3C000FCB4E /* HypnosisterAppDelegate.m in Sources */,
+				D83A32FA1834E2B4000FCB4E /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
