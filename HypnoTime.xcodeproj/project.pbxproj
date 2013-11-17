@@ -27,6 +27,12 @@
 		D83A330818350165000FCB4E /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330418350165000FCB4E /* Hypno@2x.png */; };
 		D83A330918350165000FCB4E /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330518350165000FCB4E /* Time.png */; };
 		D83A330A18350165000FCB4E /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A330618350165000FCB4E /* Time@2x.png */; };
+		D83A330D1838FDD9000FCB4E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A330C1838FDD9000FCB4E /* MapViewController.m */; };
+		D83A330F1838FE36000FCB4E /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83A330E1838FE36000FCB4E /* MapViewController.xib */; };
+		D83A3312183907BD000FCB4E /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A3310183907BD000FCB4E /* Map.png */; };
+		D83A3313183907BD000FCB4E /* Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D83A3311183907BD000FCB4E /* Map@2x.png */; };
+		D83A331518391168000FCB4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83A331418391168000FCB4E /* MapKit.framework */; };
+		D83A33181839156E000FCB4E /* ASMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A33171839156E000FCB4E /* ASMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,14 @@
 		D83A330418350165000FCB4E /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		D83A330518350165000FCB4E /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		D83A330618350165000FCB4E /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		D83A330B1838FDD9000FCB4E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D83A330C1838FDD9000FCB4E /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D83A330E1838FE36000FCB4E /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		D83A3310183907BD000FCB4E /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		D83A3311183907BD000FCB4E /* Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map@2x.png"; sourceTree = "<group>"; };
+		D83A331418391168000FCB4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D83A33161839156E000FCB4E /* ASMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMapPoint.h; sourceTree = "<group>"; };
+		D83A33171839156E000FCB4E /* ASMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83A331518391168000FCB4E /* MapKit.framework in Frameworks */,
 				D83A32C31834DF3B000FCB4E /* CoreGraphics.framework in Frameworks */,
 				D83A32C51834DF3B000FCB4E /* UIKit.framework in Frameworks */,
 				D83A32C11834DF3B000FCB4E /* Foundation.framework in Frameworks */,
@@ -100,6 +115,8 @@
 				D83A330418350165000FCB4E /* Hypno@2x.png */,
 				D83A330518350165000FCB4E /* Time.png */,
 				D83A330618350165000FCB4E /* Time@2x.png */,
+				D83A3310183907BD000FCB4E /* Map.png */,
+				D83A3311183907BD000FCB4E /* Map@2x.png */,
 				D83A32C61834DF3B000FCB4E /* HypnoTime */,
 				D83A32DF1834DF3C000FCB4E /* HypnoTimeTests */,
 				D83A32BF1834DF3B000FCB4E /* Frameworks */,
@@ -119,6 +136,7 @@
 		D83A32BF1834DF3B000FCB4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D83A331418391168000FCB4E /* MapKit.framework */,
 				D83A32C01834DF3B000FCB4E /* Foundation.framework */,
 				D83A32C21834DF3B000FCB4E /* CoreGraphics.framework */,
 				D83A32C41834DF3B000FCB4E /* UIKit.framework */,
@@ -132,13 +150,18 @@
 			children = (
 				D83A32CF1834DF3C000FCB4E /* HypnosisterAppDelegate.h */,
 				D83A32D01834DF3C000FCB4E /* HypnosisterAppDelegate.m */,
+				D83A330B1838FDD9000FCB4E /* MapViewController.h */,
+				D83A330C1838FDD9000FCB4E /* MapViewController.m */,
+				D83A33161839156E000FCB4E /* ASMapPoint.h */,
+				D83A33171839156E000FCB4E /* ASMapPoint.m */,
+				D83A330E1838FE36000FCB4E /* MapViewController.xib */,
 				D83A32F81834E2B4000FCB4E /* TimeViewController.h */,
 				D83A32F91834E2B4000FCB4E /* TimeViewController.m */,
+				D83A33011834FE45000FCB4E /* TimeViewController.xib */,
 				D83A32EF1834DF8A000FCB4E /* HypnosisViewController.h */,
 				D83A32F01834DF8A000FCB4E /* HypnosisViewController.m */,
 				D83A32F51834E038000FCB4E /* HypnosisView.h */,
 				D83A32F61834E038000FCB4E /* HypnosisView.m */,
-				D83A33011834FE45000FCB4E /* TimeViewController.xib */,
 				D83A32D21834DF3C000FCB4E /* Images.xcassets */,
 				D83A32C71834DF3B000FCB4E /* Supporting Files */,
 			);
@@ -253,10 +276,13 @@
 				D83A330A18350165000FCB4E /* Time@2x.png in Resources */,
 				D83A330918350165000FCB4E /* Time.png in Resources */,
 				D83A32CB1834DF3B000FCB4E /* InfoPlist.strings in Resources */,
+				D83A3312183907BD000FCB4E /* Map.png in Resources */,
+				D83A330F1838FE36000FCB4E /* MapViewController.xib in Resources */,
 				D83A33021834FE45000FCB4E /* TimeViewController.xib in Resources */,
 				D83A330718350165000FCB4E /* Hypno.png in Resources */,
 				D83A330818350165000FCB4E /* Hypno@2x.png in Resources */,
 				D83A32D31834DF3C000FCB4E /* Images.xcassets in Resources */,
+				D83A3313183907BD000FCB4E /* Map@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +304,10 @@
 				D83A32F11834DF8A000FCB4E /* HypnosisViewController.m in Sources */,
 				D83A32F71834E038000FCB4E /* HypnosisView.m in Sources */,
 				D83A32CD1834DF3C000FCB4E /* main.m in Sources */,
+				D83A330D1838FDD9000FCB4E /* MapViewController.m in Sources */,
 				D83A32D11834DF3C000FCB4E /* HypnosisterAppDelegate.m in Sources */,
 				D83A32FA1834E2B4000FCB4E /* TimeViewController.m in Sources */,
+				D83A33181839156E000FCB4E /* ASMapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

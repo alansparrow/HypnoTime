@@ -9,6 +9,7 @@
 #import "HypnosisterAppDelegate.h"
 #import "HypnosisViewController.h"
 #import "TimeViewController.h"
+#import "MapViewController.h"
 
 @implementation HypnosisterAppDelegate
 
@@ -24,16 +25,19 @@
     
     TimeViewController *tvc = [[TimeViewController alloc] init];
     
+    MapViewController *mvc = [[MapViewController alloc] init];
+    
     // Create an instance of UITabBarController, give it both view controllers,
     // and install it as the rootViewController of the window
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, nil];
+    NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, mvc, nil];
     [tabBarController setViewControllers:viewControllers];
     
     //[[self window] setRootViewController:hvc];
     //[[self window] setRootViewController:tvc];
     [[self window] setRootViewController:tabBarController];
+    //[[self window] setRootViewController:mvc];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
